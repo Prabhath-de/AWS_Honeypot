@@ -1,49 +1,61 @@
 #!/usr/bin/env python3
 
-"""
-Cowrie Honeypot Log Parser
-
-Research:
-Dynamic Network Defense Rule Generation Using
-Cowrie Honeypot Data with Automated Cisco ACL Enforcement
-
-Author:
-Prabhath Rashmika
-"""
-
 import json
+import csv
 from pathlib import Path
 
-# Input log file
 RAW_LOG = Path("../data/raw/cowrie.json")
+OUTPUT_DIR = Path("../data/processed")
 
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-def main():
+failed_logins = []
 
-    print("=" * 50)
-    print(" Cowrie Log Parser ")
-    print("=" * 50)
+print("=" * 60)
+print("Cowrie Log Parser")
+print("=" * 60)
 
-    if not RAW_LOG.exists():
-        print(f"ERROR : {RAW_LOG} not found.")
-        return
+with open(RAW_LOG, "r") as logfile:
 
-    print(f"Log file found : {RAW_LOG}")
+    for line in logfile:
 
-    total = 0
+        if not line.strip():
+            continue
 
-    with open(RAW_LOG, "r") as logfile:
+        event = json.loads(line)
 
-        for line in logfile:
+        if event.get("eventid") == "cowrie.login.failed":
 
-            if line.strip():
+            failed_logins.append({
 
-                json.loads(line)
+                "timestamp": event.get("timestamp"),
 
-                total += 1
+                "src_ip": event.get("src_ip"),
 
-    print(f"Total Events : {total}")
+                "username": event.get("username"),
 
+                "password": event.get("password")
 
-if __name__ == "__main__":
-    main()
+            })
+
+print("Failed Login Events :", len(failed_logins))
+
+csv_file = OUTPUT_DIR / "failed_logins.csv"
+
+with open(csv_file, "w", newline="") as f:
+
+    writer = csv.DictWriter(
+        f,
+        fieldnames=[
+            "timestamp",
+            "src_ip",
+            "username",
+            "password"
+        ]
+    )
+
+    writer.writeheader()
+
+    writer.writerows(failed_logins)
+
+print("CSV Created :", csv_file)
