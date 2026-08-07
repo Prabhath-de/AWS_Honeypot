@@ -4,8 +4,7 @@
 Cowrie Threat Intelligence Engine
 
 Research:
-Dynamic Network Defense Rule Generation Using
-Cowrie Honeypot Data with Automated Cisco ACL Enforcement
+Dynamic Network Defense Rule Generation Using Cowrie Honeypot Data with Automated Cisco ACL Enforcement
 
 Author:
 Prabhath De Silva
@@ -36,6 +35,7 @@ from modules.client_fingerprint import extract_client_fingerprint
 from modules.campaign import extract_campaign
 from modules.file_upload import extract_file_uploads
 from modules.geoip_asn import extract_geoip_asn
+from modules.direct_tcpip import extract_direct_tcpip
 
 # --------------------------------------------------
 # Paths
@@ -113,6 +113,8 @@ file_upload_count = extract_file_uploads(events, OUTPUT_DIR)
 
 geoip_count = extract_geoip_asn(events, OUTPUT_DIR)
 
+direct_tcpip_count = extract_direct_tcpip(events, OUTPUT_DIR)
+
 # --------------------------------------------------
 # Summary
 # --------------------------------------------------
@@ -131,6 +133,7 @@ print(f"Client Fingerprints      : {client_count}")
 print(f"Campaign Records         : {campaign_count}")
 print(f"File Uploads            : {file_upload_count}")
 print(f"GeoIP / ASN Records      : {geoip_count}")
+print(f"Direct TCP/IP Events     : {direct_tcpip_count}")
 
 print("\nGenerated Files")
 
@@ -144,5 +147,6 @@ print("✔ client_fingerprint.csv")
 print("✔ campaign_summary.csv")
 print("✔ file_uploads.csv")
 print("✔ geoip_asn.csv")
+print("✔ direct_tcpip.csv")
 
 print("\nThreat Intelligence Engine Completed Successfully.")
