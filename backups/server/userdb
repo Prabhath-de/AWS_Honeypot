@@ -1,0 +1,17 @@
+# ----- Successful fake accounts -----
+
+root:x:admin123
+admin:x:password
+ubuntu:x:ubuntu
+test:x:test123
+
+# ----- Explicit failed passwords -----
+
+root:x:!root
+root:x:!123456
+admin:x:!admin
+ubuntu:x:!password
+
+# ----- Deny all other passwords -----
+
+*:x:!*

@@ -1,61 +1,115 @@
 #!/usr/bin/env python3
 
+"""
+Cowrie Threat Intelligence Engine
+
+Research:
+Dynamic Network Defense Rule Generation Using Cowrie Honeypot Data with Automated Cisco ACL Enforcement
+
+Author:
+Prabhath De Silva
+"""
+
 import json
-import csv
+import sys
 from pathlib import Path
 
-RAW_LOG = Path("../data/raw/cowrie.json")
-OUTPUT_DIR = Path("../data/processed")
+# --------------------------------------------------
+# Import Modules
+# --------------------------------------------------
+
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
+from modules.failed import extract_failed
+from modules.success import extract_success
+
+# --------------------------------------------------
+# Paths
+# --------------------------------------------------
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+RAW_LOG = BASE_DIR / "data" / "raw" / "cowrie.json"
+
+OUTPUT_DIR = BASE_DIR / "data" / "processed"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-failed_logins = []
+# --------------------------------------------------
+# Banner
+# --------------------------------------------------
 
 print("=" * 60)
-print("Cowrie Log Parser")
+print(" Cowrie Threat Intelligence Engine ")
 print("=" * 60)
+
+# --------------------------------------------------
+# Check Log File
+# --------------------------------------------------
+
+if not RAW_LOG.exists():
+
+    print("ERROR : Log file not found.")
+
+    print(RAW_LOG)
+
+    sys.exit(1)
+
+# --------------------------------------------------
+# Load Events
+# --------------------------------------------------
+
+events = []
 
 with open(RAW_LOG, "r") as logfile:
 
     for line in logfile:
 
-        if not line.strip():
+        line = line.strip()
+
+        if not line:
             continue
 
-        event = json.loads(line)
+        try:
 
-        if event.get("eventid") == "cowrie.login.failed":
+            events.append(json.loads(line))
 
-            failed_logins.append({
+        except json.JSONDecodeError:
 
-                "timestamp": event.get("timestamp"),
+            continue
 
-                "src_ip": event.get("src_ip"),
+print(f"\nLoaded Events : {len(events)}")
 
-                "username": event.get("username"),
+# --------------------------------------------------
+# Run Modules
+# --------------------------------------------------
 
-                "password": event.get("password")
+failed_count = extract_failed(events, OUTPUT_DIR)
 
-            })
+success_count = extract_success(events, OUTPUT_DIR)
 
-print("Failed Login Events :", len(failed_logins))
+# --------------------------------------------------
+# Summary
+# --------------------------------------------------
 
-csv_file = OUTPUT_DIR / "failed_logins.csv"
+print("\n" + "=" * 60)
 
-with open(csv_file, "w", newline="") as f:
+print("Threat Intelligence Summary")
 
-    writer = csv.DictWriter(
-        f,
-        fieldnames=[
-            "timestamp",
-            "src_ip",
-            "username",
-            "password"
-        ]
-    )
+print("=" * 60)
 
-    writer.writeheader()
+print(f"Failed Login Events      : {failed_count}")
 
-    writer.writerows(failed_logins)
+print(f"Successful Login Events  : {success_count}")
 
-print("CSV Created :", csv_file)
+print()
+
+print("Generated Files")
+
+print("✔ failed_logins.csv")
+
+print("✔ successful_logins.csv")
+
+print()
+
+print("Threat Intelligence Engine Completed Successfully.")

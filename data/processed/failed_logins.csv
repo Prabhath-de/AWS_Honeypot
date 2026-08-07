@@ -1,0 +1,1 @@
+session,protocol,src_ip,src_port,dst_ip,dst_port,eventid,sensor,uuid,timestamp,message,duration_ms,version,hassh,hasshAlgorithms,kexAlgs,keyAlgs,encCS,macCS,compCS,langCS,username,password,name,value,arch,input,filename,duplicate,url,outfile,shasum,destfile,ttylog,size,messagenum,datalen,data
