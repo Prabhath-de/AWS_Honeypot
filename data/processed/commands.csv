@@ -57,3 +57,12 @@ echo ""CPU_MODEL:$cpu_model""
 echo ""GPU:$gpu_info""
 echo ""LAST:$last_output""
 echo ""FILTER:$filter_output"""
+2026-08-07T14:58:41.857177Z,112.185.16.157,e997732c21c3,/ip cloud print
+2026-08-07T14:58:46.125779Z,112.185.16.157,e997732c21c3,ifconfig
+2026-08-07T14:58:49.776999Z,112.185.16.157,e997732c21c3,uname -a
+2026-08-07T14:58:53.612942Z,112.185.16.157,e997732c21c3,cat /proc/cpuinfo
+2026-08-07T14:58:57.733948Z,112.185.16.157,e997732c21c3,ps | grep '[Mm]iner'
+2026-08-07T14:59:01.937924Z,112.185.16.157,e997732c21c3,ps -ef | grep '[Mm]iner'
+2026-08-07T14:59:06.316308Z,112.185.16.157,e997732c21c3,ls -la ~/.local/share/TelegramDesktop/tdata /home/*/.local/share/TelegramDesktop/tdata /dev/ttyGSM* /dev/ttyUSB-mod* /var/spool/sms/* /var/log/smsd.log /etc/smsd.conf* /usr/bin/qmuxd /var/qmux_connect_socket /etc/config/simman /dev/modem* /var/config/sms/*
+2026-08-07T14:59:10.863432Z,112.185.16.157,e997732c21c3,locate D877F783D5D3EF8Cs
+2026-08-07T14:59:15.389530Z,112.185.16.157,e997732c21c3,echo Hi | cat -n
