@@ -32,9 +32,6 @@ from modules.commands import extract_commands
 from modules.sessions import extract_sessions
 from modules.file_transfer import extract_file_transfers
 from modules.malware import extract_malware
-from modules.client_fingerprint import extract_client_fingerprint
-from modules.campaign import extract_campaign
-from modules.file_upload import extract_file_uploads
 
 # --------------------------------------------------
 # Paths
@@ -58,7 +55,6 @@ print("=" * 60)
 # --------------------------------------------------
 
 if not RAW_LOG.exists():
-
     print("ERROR : Log file not found.")
     print(RAW_LOG)
     sys.exit(1)
@@ -79,11 +75,9 @@ with open(RAW_LOG, "r") as logfile:
             continue
 
         try:
-
             events.append(json.loads(line))
 
         except json.JSONDecodeError:
-
             continue
 
 print(f"\nLoaded Events : {len(events)}")
@@ -93,22 +87,11 @@ print(f"\nLoaded Events : {len(events)}")
 # --------------------------------------------------
 
 failed_count = extract_failed(events, OUTPUT_DIR)
-
 success_count = extract_success(events, OUTPUT_DIR)
-
 command_count = extract_commands(events, OUTPUT_DIR)
-
-session_count = extract_sessions(events, OUTPUT_DIR)
-
 file_transfer_count = extract_file_transfers(events, OUTPUT_DIR)
-
 malware_count = extract_malware(events, OUTPUT_DIR)
-
-client_count = extract_client_fingerprint(events, OUTPUT_DIR)
-
-campaign_count = extract_campaign(events, OUTPUT_DIR)
-
-file_upload_count = extract_file_uploads(events, OUTPUT_DIR)
+session_count = extract_sessions(events, OUTPUT_DIR)
 
 # --------------------------------------------------
 # Summary
@@ -121,23 +104,17 @@ print("=" * 60)
 print(f"Failed Login Events      : {failed_count}")
 print(f"Successful Login Events  : {success_count}")
 print(f"Command Events           : {command_count}")
-print(f"Sessions                 : {session_count}")
-print(f"File Transfers           : {file_transfer_count}")
-print(f"Malware Activities       : {malware_count}")
-print(f"Client Fingerprints      : {client_count}")
-print(f"Campaign Records         : {campaign_count}")
-print(f"File Uploads            : {file_upload_count}")
 
 print("\nGenerated Files")
-
 print("✔ failed_logins.csv")
 print("✔ successful_logins.csv")
 print("✔ commands.csv")
-print("✔ session_summary.csv")
-print("✔ file_transfers.csv")
-print("✔ malware_activity.csv")
-print("✔ client_fingerprint.csv")
-print("✔ campaign_summary.csv")
-print("✔ file_uploads.csv")
 
 print("\nThreat Intelligence Engine Completed Successfully.")
+print(f"Sessions                 : {session_count}")
+print("✔ session_summary.csv")
+print(f"File Transfers           : {file_transfer_count}")
+
+print("✔ file_transfers.csv")
+print(f"Malware Activities       : {malware_count}")
+print("✔ malware_activity.csv")
