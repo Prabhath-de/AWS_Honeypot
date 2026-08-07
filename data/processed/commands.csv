@@ -5,3 +5,4 @@ timestamp,src_ip,session,command
 2026-08-07T02:24:53.008450Z,125.227.156.55,dadb97abdeef,./8R5cdKpU
 2026-08-07T02:24:53.505767Z,125.227.156.55,cafbca0c84e4,cd /tmp && chmod +x 8R5cdKpU && bash -c ./8R5cdKpU
 2026-08-07T02:24:53.518725Z,125.227.156.55,cafbca0c84e4,./8R5cdKpU
+2026-08-07T09:41:58.277372Z,203.189.185.164,40c9e0a231bf,exit

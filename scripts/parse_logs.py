@@ -29,6 +29,9 @@ sys.path.append(str(BASE_DIR))
 from modules.failed import extract_failed
 from modules.success import extract_success
 from modules.commands import extract_commands
+from modules.sessions import extract_sessions
+from modules.file_transfer import extract_file_transfers
+from modules.malware import extract_malware
 
 # --------------------------------------------------
 # Paths
@@ -86,6 +89,9 @@ print(f"\nLoaded Events : {len(events)}")
 failed_count = extract_failed(events, OUTPUT_DIR)
 success_count = extract_success(events, OUTPUT_DIR)
 command_count = extract_commands(events, OUTPUT_DIR)
+file_transfer_count = extract_file_transfers(events, OUTPUT_DIR)
+malware_count = extract_malware(events, OUTPUT_DIR)
+session_count = extract_sessions(events, OUTPUT_DIR)
 
 # --------------------------------------------------
 # Summary
@@ -105,3 +111,10 @@ print("✔ successful_logins.csv")
 print("✔ commands.csv")
 
 print("\nThreat Intelligence Engine Completed Successfully.")
+print(f"Sessions                 : {session_count}")
+print("✔ session_summary.csv")
+print(f"File Transfers           : {file_transfer_count}")
+
+print("✔ file_transfers.csv")
+print(f"Malware Activities       : {malware_count}")
+print("✔ malware_activity.csv")

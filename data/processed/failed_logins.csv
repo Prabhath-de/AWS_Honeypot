@@ -1,1 +1,3 @@
-session,protocol,src_ip,src_port,dst_ip,dst_port,eventid,sensor,uuid,timestamp,message,duration_ms,version,hassh,hasshAlgorithms,kexAlgs,keyAlgs,encCS,macCS,compCS,langCS,username,password,name,value,arch,input,filename,duplicate,url,outfile,shasum,destfile,ttylog,size,messagenum,datalen,data
+timestamp,src_ip,username,password
+2026-08-07T09:41:41.528988Z,203.189.185.164,root,
+2026-08-07T09:41:45.435395Z,203.189.185.164,root,123456
