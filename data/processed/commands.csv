@@ -1,0 +1,7 @@
+timestamp,src_ip,session,command
+2026-08-07T02:24:49.993900Z,125.227.156.55,10fe71fcb32b,scp -t /tmp/8R5cdKpU
+2026-08-07T02:24:50.206137Z,125.227.156.55,2093aa8493e4,scp -t /tmp/8R5cdKpU
+2026-08-07T02:24:52.995830Z,125.227.156.55,dadb97abdeef,cd /tmp && chmod +x 8R5cdKpU && bash -c ./8R5cdKpU
+2026-08-07T02:24:53.008450Z,125.227.156.55,dadb97abdeef,./8R5cdKpU
+2026-08-07T02:24:53.505767Z,125.227.156.55,cafbca0c84e4,cd /tmp && chmod +x 8R5cdKpU && bash -c ./8R5cdKpU
+2026-08-07T02:24:53.518725Z,125.227.156.55,cafbca0c84e4,./8R5cdKpU

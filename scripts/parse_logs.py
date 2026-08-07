@@ -4,7 +4,8 @@
 Cowrie Threat Intelligence Engine
 
 Research:
-Dynamic Network Defense Rule Generation Using Cowrie Honeypot Data with Automated Cisco ACL Enforcement
+Dynamic Network Defense Rule Generation Using
+Cowrie Honeypot Data with Automated Cisco ACL Enforcement
 
 Author:
 Prabhath De Silva
@@ -15,22 +16,25 @@ import sys
 from pathlib import Path
 
 # --------------------------------------------------
+# Add Project Root
+# --------------------------------------------------
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+sys.path.append(str(BASE_DIR))
+
+# --------------------------------------------------
 # Import Modules
 # --------------------------------------------------
 
-sys.path.append(str(Path(__file__).resolve().parent.parent))
-
 from modules.failed import extract_failed
 from modules.success import extract_success
+from modules.commands import extract_commands
 
 # --------------------------------------------------
 # Paths
 # --------------------------------------------------
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-RAW_LOG = BASE_DIR / "data" / "raw" / "cowrie.json"
-
+RAW_LOG = BASE_DIR / "data" / "raw" / "master_dataset.json"
 OUTPUT_DIR = BASE_DIR / "data" / "processed"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -48,11 +52,8 @@ print("=" * 60)
 # --------------------------------------------------
 
 if not RAW_LOG.exists():
-
     print("ERROR : Log file not found.")
-
     print(RAW_LOG)
-
     sys.exit(1)
 
 # --------------------------------------------------
@@ -71,11 +72,9 @@ with open(RAW_LOG, "r") as logfile:
             continue
 
         try:
-
             events.append(json.loads(line))
 
         except json.JSONDecodeError:
-
             continue
 
 print(f"\nLoaded Events : {len(events)}")
@@ -85,31 +84,24 @@ print(f"\nLoaded Events : {len(events)}")
 # --------------------------------------------------
 
 failed_count = extract_failed(events, OUTPUT_DIR)
-
 success_count = extract_success(events, OUTPUT_DIR)
+command_count = extract_commands(events, OUTPUT_DIR)
 
 # --------------------------------------------------
 # Summary
 # --------------------------------------------------
 
 print("\n" + "=" * 60)
-
 print("Threat Intelligence Summary")
-
 print("=" * 60)
 
 print(f"Failed Login Events      : {failed_count}")
-
 print(f"Successful Login Events  : {success_count}")
+print(f"Command Events           : {command_count}")
 
-print()
-
-print("Generated Files")
-
+print("\nGenerated Files")
 print("✔ failed_logins.csv")
-
 print("✔ successful_logins.csv")
+print("✔ commands.csv")
 
-print()
-
-print("Threat Intelligence Engine Completed Successfully.")
+print("\nThreat Intelligence Engine Completed Successfully.")

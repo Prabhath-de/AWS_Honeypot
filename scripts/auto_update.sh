@@ -1,45 +1,68 @@
 #!/bin/bash
 
-echo "=========================================="
-echo "Cowrie Research Auto Update"
-echo "=========================================="
+##################################################
+# AWS Honeypot Automated Update Script
+#
+# Research:
+# Dynamic Network Defense Rule Generation Using
+# Cowrie Honeypot Data with Automated Cisco ACL Enforcement
+##################################################
 
-PROJECT=/home/cowrie/research/AWS_Honeypot
-COWRIE=/home/cowrie/cowrie
+echo "========================================="
+echo " AWS Honeypot Auto Update Started"
+echo "========================================="
 
-echo "[1/6] Copying latest Cowrie log..."
+PROJECT="/home/cowrie/research/AWS_Honeypot"
+COWRIE="/home/cowrie/cowrie"
 
-cp $COWRIE/var/log/cowrie/cowrie.json \
-   $PROJECT/data/raw/cowrie.json
+cd "$PROJECT" || exit 1
 
-echo "[2/6] Activating Python environment..."
+# -----------------------------------------
+# Activate Python Virtual Environment
+# -----------------------------------------
 
-source $PROJECT/venv/bin/activate
+source venv/bin/activate
 
-echo "[3/6] Running Threat Intelligence Engine..."
+# -----------------------------------------
+# Copy Latest Cowrie Log
+# -----------------------------------------
 
-python $PROJECT/scripts/parse_logs.py
+cp "$COWRIE/var/log/cowrie/cowrie.json" \
+"$PROJECT/data/raw/cowrie_live.json"
 
-echo "[4/6] Backing up latest log..."
+echo "Latest Cowrie log copied."
 
-mkdir -p $PROJECT/backups/daily
+# -----------------------------------------
+# Update Master Dataset
+# -----------------------------------------
 
-cp $PROJECT/data/raw/cowrie.json \
-   $PROJECT/backups/daily/cowrie_$(date +%F_%H-%M).json
+python scripts/dataset_manager.py
 
-echo "[5/6] Checking Git changes..."
+# -----------------------------------------
+# Parse Threat Intelligence
+# -----------------------------------------
 
-cd $PROJECT
+python scripts/parse_logs.py
+
+# -----------------------------------------
+# Git Update
+# -----------------------------------------
 
 git add .
 
-if git diff --cached --quiet
+if ! git diff --cached --quiet
 then
-    echo "No changes detected."
-else
-    git commit -m "Auto Update $(date '+%Y-%m-%d %H:%M')"
+
+    git commit -m "Hourly threat intelligence update"
+
     git push
+
+else
+
+    echo "No changes detected."
+
 fi
 
-echo "[6/6] Completed Successfully."
-echo "=========================================="
+echo "========================================="
+echo " Auto Update Completed"
+echo "========================================="
