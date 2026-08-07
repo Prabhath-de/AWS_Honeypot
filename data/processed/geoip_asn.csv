@@ -44,3 +44,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-07T16:45:11.576170Z,20.119.94.187,United States,US,8075,Microsoft Corporation
 2026-08-07T16:46:07.495421Z,120.48.53.174,China,CN,38365,"Beijing Baidu Netcom Science and Technology Co., Ltd."
 2026-08-07T17:47:33.184927Z,201.114.229.164,Mexico,MX,8151,UNINET
+2026-08-07T18:24:09.905345Z,79.29.226.142,Italy,IT,3269,TIM
+2026-08-07T18:27:37.509753Z,191.103.49.59,Argentina,AR,28048,Internet Para Todos - Gobierno de La Rioja
+2026-08-07T18:48:28.768630Z,77.12.59.112,Germany,DE,6805,Telefonica Germany
