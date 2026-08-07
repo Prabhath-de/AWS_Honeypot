@@ -4,3 +4,16 @@ __pycache__/
 *.pid
 cowrie-env/
 .env
+
+# Python Virtual Environment
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# OS Files
+.DS_Store
+
+# Backup Logs (optional)
+backups/daily/
