@@ -1,0 +1,13 @@
+{
+    "failed_login": 20,
+    "successful_login": 30,
+    "commands": 15,
+    "session": 10,
+    "file_upload": 15,
+    "file_transfer": 10,
+    "malware": 25,
+    "campaign": 10,
+    "client_fingerprint": 5,
+    "geoip": 5,
+    "direct_tcpip": 40
+}

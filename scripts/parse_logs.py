@@ -36,6 +36,7 @@ from modules.campaign import extract_campaign
 from modules.file_upload import extract_file_uploads
 from modules.geoip_asn import extract_geoip_asn
 from modules.direct_tcpip import extract_direct_tcpip
+from modules.threat_score import extract_threat_scores
 
 # --------------------------------------------------
 # Paths
@@ -115,6 +116,8 @@ geoip_count = extract_geoip_asn(events, OUTPUT_DIR)
 
 direct_tcpip_count = extract_direct_tcpip(events, OUTPUT_DIR)
 
+threat_score_count = extract_threat_scores(events, OUTPUT_DIR)
+
 # --------------------------------------------------
 # Summary
 # --------------------------------------------------
@@ -134,6 +137,7 @@ print(f"Campaign Records         : {campaign_count}")
 print(f"File Uploads            : {file_upload_count}")
 print(f"GeoIP / ASN Records      : {geoip_count}")
 print(f"Direct TCP/IP Events     : {direct_tcpip_count}")
+print(f"Threat Scores            : {threat_score_count}")
 
 print("\nGenerated Files")
 
@@ -148,5 +152,6 @@ print("✔ campaign_summary.csv")
 print("✔ file_uploads.csv")
 print("✔ geoip_asn.csv")
 print("✔ direct_tcpip.csv")
+print("✔ threat_scores.csv")
 
 print("\nThreat Intelligence Engine Completed Successfully.")
