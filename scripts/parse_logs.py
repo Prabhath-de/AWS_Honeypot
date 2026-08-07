@@ -35,6 +35,7 @@ from modules.malware import extract_malware
 from modules.client_fingerprint import extract_client_fingerprint
 from modules.campaign import extract_campaign
 from modules.file_upload import extract_file_uploads
+from modules.geoip_asn import extract_geoip_asn
 
 # --------------------------------------------------
 # Paths
@@ -110,6 +111,8 @@ campaign_count = extract_campaign(events, OUTPUT_DIR)
 
 file_upload_count = extract_file_uploads(events, OUTPUT_DIR)
 
+geoip_count = extract_geoip_asn(events, OUTPUT_DIR)
+
 # --------------------------------------------------
 # Summary
 # --------------------------------------------------
@@ -127,6 +130,7 @@ print(f"Malware Activities       : {malware_count}")
 print(f"Client Fingerprints      : {client_count}")
 print(f"Campaign Records         : {campaign_count}")
 print(f"File Uploads            : {file_upload_count}")
+print(f"GeoIP / ASN Records      : {geoip_count}")
 
 print("\nGenerated Files")
 
@@ -139,5 +143,6 @@ print("✔ malware_activity.csv")
 print("✔ client_fingerprint.csv")
 print("✔ campaign_summary.csv")
 print("✔ file_uploads.csv")
+print("✔ geoip_asn.csv")
 
 print("\nThreat Intelligence Engine Completed Successfully.")
