@@ -76,3 +76,4 @@ echo ""FILTER:$filter_output"""
 2026-08-08T10:26:13.169436Z,112.167.99.220,d33a0d2c1c24,ls -la ~/.local/share/TelegramDesktop/tdata /home/*/.local/share/TelegramDesktop/tdata /dev/ttyGSM* /dev/ttyUSB-mod* /var/spool/sms/* /var/log/smsd.log /etc/smsd.conf* /usr/bin/qmuxd /var/qmux_connect_socket /etc/config/simman /dev/modem* /var/config/sms/*
 2026-08-08T10:26:14.085623Z,112.167.99.220,d33a0d2c1c24,locate D877F783D5D3EF8Cs
 2026-08-08T10:26:15.016994Z,112.167.99.220,d33a0d2c1c24,echo Hi | cat -n
+2026-08-08T14:03:07.352740Z,47.112.16.89,b093ca06384f,uname -a
