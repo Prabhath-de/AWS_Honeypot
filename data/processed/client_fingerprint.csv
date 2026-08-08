@@ -73,3 +73,4 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-08-07T19:35:20.900481Z,66.132.172.178,ba8ff3164ae1,SSH-2.0-Go,873a5fb5fedc2d4f8638ebde4abc6cfc,,
 2026-08-07T19:40:22.423388Z,192.42.116.17,f9bd29892394,SSH-2.0-OpenSSH_10.4,d00d43d15d59705b090cf74488cc2218,,
 2026-08-08T01:27:48.407908Z,106.12.56.73,fcf2bdc945ca,SSH-2.0-Go,98ddc5604ef6a1006a2b49a58759fbe6,,
+2026-08-08T06:58:43.336163Z,91.231.89.10,980df8e6950b,"\x16\x03\x03\x02a\x01\x00\x02]\x03\x03\xfd,\xe9c K\xe7\xb0\xd9\xaf\x09\x9d\xe0 G#\x02x\xf3\xd8\xad8%\xdfM\x7f\x82h{\xae\x1f\xdd \x0fD",,,
