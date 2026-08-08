@@ -78,3 +78,6 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-08-08T07:01:19.321000Z,91.231.89.55,4bad6e0a83dc,SSH-2.0-perlssh,3c0eaacec19ba322a90a5541dac09a06,,
 2026-08-08T07:27:05.960667Z,93.158.90.62,77defbb5bcb6,"\x16\x03\x01\x01\x00\x01\x00\x00\xfc\x03\x03:R\x0e\x10\x8eb\x84\xfe\x9d$\x8c86B\x0c\xc9\xac\x9b,\xce\xf8\xa7\xa2\xf5\x0f5\xdc\xf1\xb31\x0c\x82 \x7f\x0d\xfd\xad\xd4\x11!\xf9\x9a{\xd0 X\x9a\x9a\x8f\xb9-\x99JS\xfc\x85}\x04\xfe\x86<`\xb0`r\x00\x1a\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x09\xc0\x13\xc0",,,
 2026-08-08T07:27:05.969443Z,93.158.90.62,a4e7a178159b,GET / HTTP/1.1,,,
+2026-08-08T10:26:02.829026Z,112.167.99.220,d33a0d2c1c24,SSH-2.0-libssh2_1.11.1,f45fb203c31069bb280067b71ed92ccb,,
+2026-08-08T10:47:38.714144Z,120.48.7.234,702ada9a6868,SSH-2.0-Go,98ddc5604ef6a1006a2b49a58759fbe6,,
+2026-08-08T10:59:13.579891Z,147.185.132.249,7e32a5b4e7fc,SSH-2.0-ZGrab ZGrab SSH Survey,dd9bcf093c355da7000132131cb36fd0,,
