@@ -37,6 +37,7 @@ from modules.file_upload import extract_file_uploads
 from modules.geoip_asn import extract_geoip_asn
 from modules.direct_tcpip import extract_direct_tcpip
 from modules.threat_score import extract_threat_scores
+from modules.acl_generator import generate_acl
 
 # --------------------------------------------------
 # Paths
@@ -118,6 +119,11 @@ direct_tcpip_count = extract_direct_tcpip(events, OUTPUT_DIR)
 
 threat_score_count = extract_threat_scores(events, OUTPUT_DIR)
 
+generate_acl(
+    OUTPUT_DIR / "threat_scores.csv",
+    OUTPUT_DIR / "generated_acl.cfg"
+)
+
 # --------------------------------------------------
 # Summary
 # --------------------------------------------------
@@ -153,5 +159,6 @@ print("✔ file_uploads.csv")
 print("✔ geoip_asn.csv")
 print("✔ direct_tcpip.csv")
 print("✔ threat_scores.csv")
+print("✔ generated_acl.cfg")
 
 print("\nThreat Intelligence Engine Completed Successfully.")
