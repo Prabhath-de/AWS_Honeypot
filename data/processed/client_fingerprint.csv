@@ -74,3 +74,7 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-08-07T19:40:22.423388Z,192.42.116.17,f9bd29892394,SSH-2.0-OpenSSH_10.4,d00d43d15d59705b090cf74488cc2218,,
 2026-08-08T01:27:48.407908Z,106.12.56.73,fcf2bdc945ca,SSH-2.0-Go,98ddc5604ef6a1006a2b49a58759fbe6,,
 2026-08-08T06:58:43.336163Z,91.231.89.10,980df8e6950b,"\x16\x03\x03\x02a\x01\x00\x02]\x03\x03\xfd,\xe9c K\xe7\xb0\xd9\xaf\x09\x9d\xe0 G#\x02x\xf3\xd8\xad8%\xdfM\x7f\x82h{\xae\x1f\xdd \x0fD",,,
+2026-08-08T07:01:14.476188Z,91.196.152.82,317d11802416,SSH-2.0-perlssh,3c0eaacec19ba322a90a5541dac09a06,,
+2026-08-08T07:01:19.321000Z,91.231.89.55,4bad6e0a83dc,SSH-2.0-perlssh,3c0eaacec19ba322a90a5541dac09a06,,
+2026-08-08T07:27:05.960667Z,93.158.90.62,77defbb5bcb6,"\x16\x03\x01\x01\x00\x01\x00\x00\xfc\x03\x03:R\x0e\x10\x8eb\x84\xfe\x9d$\x8c86B\x0c\xc9\xac\x9b,\xce\xf8\xa7\xa2\xf5\x0f5\xdc\xf1\xb31\x0c\x82 \x7f\x0d\xfd\xad\xd4\x11!\xf9\x9a{\xd0 X\x9a\x9a\x8f\xb9-\x99JS\xfc\x85}\x04\xfe\x86<`\xb0`r\x00\x1a\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x09\xc0\x13\xc0",,,
+2026-08-08T07:27:05.969443Z,93.158.90.62,a4e7a178159b,GET / HTTP/1.1,,,
