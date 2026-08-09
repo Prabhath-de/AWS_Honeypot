@@ -92,3 +92,4 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-08-08T23:43:24.221217Z,195.178.110.232,29ba7d7a167a,SSH-2.0-Go,2ec37a7cc8daf20b10e1ad6221061ca5,,
 2026-08-09T01:11:40.546729Z,24.144.92.93,9cf56c1302b8,GET / HTTP/1.1,,,
 2026-08-09T01:11:40.934959Z,24.144.92.93,ac7b3510b4be,GET /favicon.ico HTTP/1.1,,,
+2026-08-09T04:52:20.510414Z,205.210.31.255,0cf76c862c07,SSH-2.0-ZGrab ZGrab SSH Survey,dd9bcf093c355da7000132131cb36fd0,,
