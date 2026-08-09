@@ -106,3 +106,4 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-08-09T16:30:07.115160Z,205.210.31.60,59e5b4547239,SSH-2.0-ZGrab ZGrab SSH Survey,dd9bcf093c355da7000132131cb36fd0,,
 2026-08-09T20:47:40.328143Z,104.152.52.222,ce7cd20319d3,"\x16\x03\x01\x05\xca\x01\x00\x05\xc6\x03\x03h\xb0,\x0f_\x86\xf3O\x08\xa8\xa0\x05*/m\x19\xb5\xd1C\x9e\xe2\xfa\xfb\xc2\xf4\x9f<\xd3s\xf5\xe2m \xc5\x0e#\xd5\x9d\xbb\x10\x9a\xde""\xf7_Yyu\x83,\xb0Y}\x0b\x9c\xf4\xadS\xdb\x1c\xc2|\xef\xad\x90\x00\x1a\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x09\xc0\x13\xc0",,,
 2026-08-09T20:47:40.560153Z,104.152.52.219,f10953767e1b,SSH-2.0-Go,e54ef3ec27fe1fea7ab64d3fa05359fd,,
+2026-08-09T21:33:47.467085Z,66.132.195.66,41461f279c95,SSH-2.0-Go,873a5fb5fedc2d4f8638ebde4abc6cfc,,
