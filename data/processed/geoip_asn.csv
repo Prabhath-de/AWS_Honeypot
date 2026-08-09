@@ -154,3 +154,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-09T13:05:39.277051Z,18.234.52.162,United States,US,14618,"Amazon.com, Inc."
 2026-08-09T13:57:58.439839Z,124.239.153.90,China,CN,4134,Chinanet
 2026-08-09T13:59:51.296088Z,98.40.250.141,United States,US,7922,"Comcast Cable Communications, LLC"
+2026-08-09T14:03:29.373631Z,190.231.190.48,Argentina,AR,7303,Telecom Argentina S.A.
+2026-08-09T14:07:52.527892Z,3.130.168.2,United States,US,16509,"Amazon.com, Inc."

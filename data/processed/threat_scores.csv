@@ -13,4 +13,4 @@ src_ip,threat_score,risk_level,total_events,failed_login,successful_login,comman
 106.12.56.73,45,Medium,3,0,1,0,1,0,0,0,1,0
 120.48.7.234,45,Medium,3,0,1,0,1,0,0,0,1,0
 59.63.188.218,45,Medium,3,0,1,0,1,0,0,0,1,0
-124.239.153.90,30,Medium,2,0,1,0,0,0,0,0,1,0
+124.239.153.90,45,Medium,3,0,1,0,1,0,0,0,1,0
