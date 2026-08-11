@@ -313,3 +313,7 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-11T13:44:47.343286Z,210.14.102.156,Myanmar,MM,58952,Frontiir Co. Ltd
 2026-08-11T13:51:19.405543Z,104.131.90.23,United States,US,14061,"DigitalOcean, LLC"
 2026-08-11T13:55:06.626749Z,44.220.185.126,United States,US,14618,"Amazon.com, Inc."
+2026-08-11T14:21:01.639914Z,213.172.149.40,South Africa,ZA,328471,HERO TELECOMS (PTY) LTD
+2026-08-11T14:29:24.375692Z,58.69.118.27,Philippines,PH,9299,Philippine Long Distance Telephone Company
+2026-08-11T14:29:52.093306Z,124.107.6.223,Philippines,PH,9299,Philippine Long Distance Telephone Company
+2026-08-11T14:55:12.423771Z,83.254.199.54,Sweden,SE,1257,Tele2 SWIPnet
