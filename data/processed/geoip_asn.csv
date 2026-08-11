@@ -352,3 +352,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-11T21:39:00.397681Z,37.54.208.149,Ukraine,UA,6849,JSC Ukrtelecom
 2026-08-11T21:49:18.027857Z,38.224.34.234,Venezuela,VE,273007,"SPEEDNET, C.A"
 2026-08-11T21:55:55.315840Z,100.8.202.181,United States,US,701,Verizon Business
+2026-08-11T22:39:11.883213Z,190.99.71.7,Argentina,AR,52235,IPV6 SRL
+2026-08-11T22:41:20.501118Z,47.112.121.84,China,CN,37963,"Hangzhou Alibaba Advertising Co.,Ltd."
