@@ -423,3 +423,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-12T17:15:53.131648Z,143.105.137.181,Argentina,AR,14593,Space Exploration Technologies Corporation
 2026-08-12T17:21:09.457462Z,24.208.243.28,United States,US,10796,Charter Communications Inc
 2026-08-12T17:39:26.174002Z,45.65.227.70,Argentina,AR,266725,SOLUTION LAN S.A
+2026-08-12T18:04:55.371715Z,190.173.14.127,Argentina,AR,22927,Telefonica de Argentina
+2026-08-12T18:55:39.726071Z,38.137.177.2,Venezuela,VE,273155,"DATANET VZLA 2021, C.A"
+2026-08-12T18:59:12.382146Z,41.10.143.132,South Africa,ZA,36994,Vodacom
