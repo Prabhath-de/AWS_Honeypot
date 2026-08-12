@@ -367,3 +367,7 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-12T01:26:22.176992Z,45.225.163.73,Brazil,BR,263569,DIRECT INTERNET LTDA
 2026-08-12T01:29:33.292958Z,68.1.186.218,United States,US,22773,Cox Communications Inc.
 2026-08-12T01:52:33.699458Z,186.189.67.160,Argentina,AR,28075,ARLINK S.A.
+2026-08-12T02:17:39.577668Z,190.3.29.20,Argentina,AR,11664,Techtel LMDS Comunicaciones Interactivas S.A.
+2026-08-12T02:18:08.199639Z,190.3.29.18,Argentina,AR,11664,Techtel LMDS Comunicaciones Interactivas S.A.
+2026-08-12T02:22:12.595120Z,172.104.142.74,Germany,DE,63949,Akamai Connected Cloud
+2026-08-12T02:31:43.273605Z,5.206.152.120,Hungary,HU,21334,2Connect Telecommunications Infrastructure & Network Services Ltd.
