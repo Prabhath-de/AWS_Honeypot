@@ -374,3 +374,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-12T03:37:22.671217Z,200.86.236.210,Chile,CL,22047,VTR BANDA ANCHA S.A.
 2026-08-12T03:51:21.499067Z,190.114.33.177,Chile,CL,27901,Pacifico Cable SPA.
 2026-08-12T03:55:44.600612Z,190.173.151.251,Argentina,AR,22927,Telefonica de Argentina
+2026-08-12T04:00:15.183491Z,212.252.118.41,Türkiye,TR,34984,Superonline Iletisim Hizmetleri A.S.
+2026-08-12T04:34:01.108114Z,146.190.169.5,United States,US,14061,"DigitalOcean, LLC"
