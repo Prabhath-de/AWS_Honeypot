@@ -146,3 +146,4 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-08-12T00:28:51.654391Z,66.132.186.177,200f0d06f18c,SSH-2.0-Go,873a5fb5fedc2d4f8638ebde4abc6cfc,,
 2026-08-12T02:23:33.412065Z,172.104.142.74,c28357bf73c1,"\x16\x03\x01\x00\xee\x01\x00\x00\xea\x03\x03\xa0\xd7\xde\x1c&[\xc4\xe3\x1f\x02\xc0\xf7\xd2f\xe5\x86\xd0[r7\xbe\xa93\xe0\x86\x15\xe1\x17F\xa8\xf4\x8b \x1b\x94\xac(\\\xa1\xbe6\xfb\xbd\xf3\xf4`]0\x0f\xc7i\xad~~\xa2g*L=\xa6""\xba\x1b8\xa1\x00&\xcc\xa8\xcc\xa9\xc0/\xc00\xc0+\xc0,\xc0\x13\xc0\x09\xc0\x14\xc0",,,
 2026-08-12T04:34:01.108114Z,146.190.169.5,dc33462ff30d,GET / HTTP/1.1,,,
+2026-08-12T08:21:42.004669Z,47.93.9.23,7021bbb1ab26,SSH-2.0-Go,4e066189c3bbeec38c99b1855113733a,,
