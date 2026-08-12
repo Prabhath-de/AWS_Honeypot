@@ -371,3 +371,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-12T02:18:08.199639Z,190.3.29.18,Argentina,AR,11664,Techtel LMDS Comunicaciones Interactivas S.A.
 2026-08-12T02:22:12.595120Z,172.104.142.74,Germany,DE,63949,Akamai Connected Cloud
 2026-08-12T02:31:43.273605Z,5.206.152.120,Hungary,HU,21334,2Connect Telecommunications Infrastructure & Network Services Ltd.
+2026-08-12T03:37:22.671217Z,200.86.236.210,Chile,CL,22047,VTR BANDA ANCHA S.A.
+2026-08-12T03:51:21.499067Z,190.114.33.177,Chile,CL,27901,Pacifico Cable SPA.
+2026-08-12T03:55:44.600612Z,190.173.151.251,Argentina,AR,22927,Telefonica de Argentina
