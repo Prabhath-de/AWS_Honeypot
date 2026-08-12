@@ -379,3 +379,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-12T05:00:38.972855Z,45.171.166.192,Peru,PE,273133,CONEX TV E.I.R.L.
 2026-08-12T05:01:11.307941Z,191.83.132.30,Argentina,AR,22927,Telefonica de Argentina
 2026-08-12T05:29:15.334561Z,180.245.255.240,Indonesia,ID,7713,PT Telekomunikasi Indonesia
+2026-08-12T06:03:48.062649Z,77.91.163.100,Palestine,PS,12975,Palestine Telecommunications Company (PALTEL)
+2026-08-12T06:13:32.104808Z,186.57.71.188,Argentina,AR,22927,Telefonica de Argentina
+2026-08-12T06:16:34.232089Z,177.226.183.199,Mexico,MX,13999,"Mega Cable, S.A. de C.V."
