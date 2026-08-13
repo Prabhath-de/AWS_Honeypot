@@ -503,3 +503,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-13T08:31:51.835049Z,67.49.3.97,United States,US,20001,Charter Communications Inc
 2026-08-13T08:59:03.241257Z,79.108.229.176,Spain,ES,210423,"Atuaxanela, S.l."
 2026-08-13T08:59:59.920782Z,103.231.95.30,Myanmar,MM,133384,"Global Technology Co., Ltd."
+2026-08-13T09:06:27.702392Z,102.22.120.62,South Africa,ZA,328399,Vaal Networking Consultants (PTY) LTD
+2026-08-13T09:16:55.565143Z,191.92.110.23,Colombia,CO,13489,UNE EPM TELECOMUNICACIONES S.A.
