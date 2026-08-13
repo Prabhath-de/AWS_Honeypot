@@ -466,3 +466,8 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-13T01:46:33.676619Z,153.67.15.238,Argentina,AR,14593,Space Exploration Technologies Corporation
 2026-08-13T01:56:13.332057Z,45.113.109.75,Palestine,PS,12975,Palestine Telecommunications Company (PALTEL)
 2026-08-13T01:58:29.455461Z,45.172.222.210,Colombia,CO,267823,ATENEA TELECOMUNICACIONES S.A.S
+2026-08-13T02:19:38.418529Z,68.57.141.115,United States,US,7922,"Comcast Cable Communications, LLC"
+2026-08-13T02:20:35.902021Z,112.210.225.170,Philippines,PH,9299,Philippine Long Distance Telephone Company
+2026-08-13T02:26:26.036160Z,201.231.7.22,Argentina,AR,7303,Telecom Argentina S.A.
+2026-08-13T02:43:27.748569Z,152.172.210.43,Chile,CL,7418,TELEFONICA CHILE S.A.
+2026-08-13T02:59:36.363331Z,200.114.87.8,Argentina,AR,28065,CITARELLA S.A.
