@@ -626,3 +626,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-14T09:22:18.474826Z,178.82.215.99,Switzerland,CH,6730,Sunrise GmbH
 2026-08-14T09:45:23.895296Z,190.138.138.160,Argentina,AR,7303,Telecom Argentina S.A.
 2026-08-14T09:58:11.812882Z,181.84.134.96,Argentina,AR,7303,Telecom Argentina S.A.
+2026-08-14T10:22:32.468109Z,108.69.58.65,United States,US,7018,"AT&T Enterprises, LLC"
+2026-08-14T10:39:37.829666Z,186.78.171.140,Chile,CL,7418,TELEFONICA CHILE S.A.
