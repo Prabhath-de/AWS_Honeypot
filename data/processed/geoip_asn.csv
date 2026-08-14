@@ -667,3 +667,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-14T18:42:02.997017Z,190.49.92.232,Argentina,AR,22927,Telefonica de Argentina
 2026-08-14T18:44:22.581879Z,91.214.137.44,Ukraine,UA,47898,RPC HomeNet Ltd.
 2026-08-14T18:45:08.984751Z,45.174.250.2,Mexico,MX,265582,Wifmax S.A de C.V.
+2026-08-14T19:09:59.365369Z,178.80.43.211,Saudi Arabia,SA,35819,"Etihad Etisalat, a joint stock company"
+2026-08-14T19:54:56.294597Z,201.214.43.22,Chile,CL,22047,VTR BANDA ANCHA S.A.
