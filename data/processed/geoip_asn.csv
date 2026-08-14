@@ -601,3 +601,8 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-14T05:27:10.260108Z,71.215.42.139,United States,US,209,"CenturyLink Communications, LLC"
 2026-08-14T05:31:12.181066Z,201.220.16.98,Argentina,AR,52413,MADACOM SRL
 2026-08-14T05:47:37.478147Z,138.84.41.116,Chile,CL,14593,Space Exploration Technologies Corporation
+2026-08-14T06:11:39.432462Z,181.95.61.124,Argentina,AR,7303,Telecom Argentina S.A.
+2026-08-14T06:19:32.510209Z,186.189.85.203,Chile,CL,52341,WOM SpA
+2026-08-14T06:28:55.998549Z,45.187.36.42,Argentina,AR,269847,LA PROVIDENCIA S.R.L
+2026-08-14T06:51:59.959461Z,112.208.190.246,Philippines,PH,9299,Philippine Long Distance Telephone Company
+2026-08-14T06:58:00.280131Z,106.77.166.55,India,IN,45271,Vodafone Idea Ltd
