@@ -690,3 +690,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-14T23:30:51.604805Z,202.58.75.169,Indonesia,ID,138886,PT Data Buana Nusantara
 2026-08-14T23:40:07.513643Z,186.128.189.45,Argentina,AR,22927,Telefonica de Argentina
 2026-08-14T23:52:10.729732Z,201.234.66.139,Colombia,CO,3549,"Level 3 Parent, LLC"
+2026-08-15T00:15:50.625026Z,181.89.106.138,Argentina,AR,7303,Telecom Argentina S.A.
+2026-08-15T00:17:53.747001Z,152.231.22.203,Argentina,AR,52505,CBRNET
+2026-08-15T00:38:55.950498Z,101.108.223.193,Thailand,TH,23969,TOT Public Company Limited
