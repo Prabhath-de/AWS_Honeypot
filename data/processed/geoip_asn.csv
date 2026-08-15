@@ -712,3 +712,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-08-15T03:47:35.940472Z,131.221.14.167,Brazil,BR,52892,COPREL TELECOM LTDA
 2026-08-15T04:53:04.187424Z,177.244.169.55,Mexico,MX,13999,"Mega Cable, S.A. de C.V."
 2026-08-15T04:58:55.700619Z,201.176.82.201,Argentina,AR,22927,Telefonica de Argentina
+2026-08-15T05:21:23.600773Z,186.1.186.87,Colombia,CO,27837,Dialnet de Colombia S.A. E.S.P.
+2026-08-15T05:31:16.969758Z,186.158.3.55,Argentina,AR,11664,Techtel LMDS Comunicaciones Interactivas S.A.
