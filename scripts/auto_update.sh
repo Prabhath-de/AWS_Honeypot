@@ -6,6 +6,15 @@
 
 set -e
 
+# Prevent overlapping cron runs
+LOCKFILE="/tmp/aws_honeypot_auto_update.lock"
+exec 9>"$LOCKFILE"
+if ! flock -n 9; then
+    echo "Another auto-update process is already running. Exiting."
+    exit 0
+fi
+
+
 echo "========================================="
 echo " AWS Honeypot Auto Update Started"
 echo "========================================="
@@ -65,18 +74,26 @@ echo "Threat intelligence parsing completed successfully."
 echo "Checking processed data changes..."
 
 git add .gitignore
-git add data/processed/
+git add data/processed/*.csv data/processed/generated_acl.cfg
 git add scripts/auto_update.sh
 
 if ! git diff --cached --quiet
 then
     echo "Changes detected."
 
-    git commit -m "Hourly threat intelligence update"
+    if git commit -m "Hourly threat intelligence update"; then
+        echo "Git commit completed."
+    else
+        echo "ERROR: Git commit failed."
+        exit 1
+    fi
 
-    git -c pack.threads=1 -c core.compression=0 push origin main
-
-    echo "GitHub update completed successfully."
+    if git -c pack.threads=1 -c core.compression=0 push origin main; then
+        echo "GitHub update completed successfully."
+    else
+        echo "ERROR: GitHub push failed."
+        exit 1
+    fi
 else
     echo "No processed data changes detected."
 fi
