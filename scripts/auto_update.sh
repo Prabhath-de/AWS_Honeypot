@@ -66,6 +66,7 @@ echo "Checking processed data changes..."
 
 git add .gitignore
 git add data/processed/
+git add scripts/auto_update.sh
 
 if ! git diff --cached --quiet
 then
@@ -73,7 +74,7 @@ then
 
     git commit -m "Hourly threat intelligence update"
 
-    git push
+    git -c pack.threads=1 -c core.compression=0 push origin main
 
     echo "GitHub update completed successfully."
 else
