@@ -1,12 +1,8 @@
 #!/bin/bash
 
-##################################################
-# AWS Honeypot Automated Update Script
-#
-# Research:
-# Dynamic Network Defense Rule Generation Using
-# Cowrie Honeypot Data with Automated Cisco ACL Enforcement
-##################################################
+# =========================================
+# AWS Honeypot Automatic Update Script
+# =========================================
 
 set -e
 
@@ -23,7 +19,9 @@ cd "$PROJECT"
 # Activate Python Virtual Environment
 # -----------------------------------------
 
-source venv/bin/activate
+source "$PROJECT/venv/bin/activate"
+
+echo "Python virtual environment activated."
 
 # -----------------------------------------
 # Copy Latest Cowrie Log
@@ -38,25 +36,46 @@ echo "Latest Cowrie log copied."
 # Update Master Dataset
 # -----------------------------------------
 
-python scripts/dataset_manager.py
+echo "Updating master dataset..."
+
+python scripts/dataset_manager.py || {
+    echo "ERROR: Dataset manager failed."
+    exit 1
+}
+
+echo "Master dataset updated successfully."
 
 # -----------------------------------------
 # Parse Threat Intelligence
 # -----------------------------------------
 
-python scripts/parse_logs.py
+echo "Parsing threat intelligence..."
+
+python scripts/parse_logs.py || {
+    echo "ERROR: Threat intelligence parser failed."
+    exit 1
+}
+
+echo "Threat intelligence parsing completed successfully."
 
 # -----------------------------------------
 # Git Update
 # -----------------------------------------
+
+echo "Checking processed data changes..."
 
 git add .gitignore
 git add data/processed/
 
 if ! git diff --cached --quiet
 then
+    echo "Changes detected."
+
     git commit -m "Hourly threat intelligence update"
+
     git push
+
+    echo "GitHub update completed successfully."
 else
     echo "No processed data changes detected."
 fi
