@@ -1,68 +1,36 @@
-"""
-File Transfer Detection Module
-
-Research:
-Dynamic Network Defense Rule Generation Using
-Cowrie Honeypot Data with Automated Cisco ACL Enforcement
-"""
-
-import pandas as pd
-
+import csv
 
 def extract_file_transfers(events, output_dir):
+    output_file = output_dir / "file_transfers.csv"
+    keywords = ["scp", "wget", "curl", "ftp", "tftp", "sftp"]
+    count = 0
 
-    df = pd.DataFrame(events)
+    with open(output_file, "w", newline="", encoding="utf-8") as csvfile:
+        writer = csv.writer(csvfile)
 
-    if df.empty:
-        print("No events found.")
-        return 0
+        writer.writerow([
+            "timestamp",
+            "src_ip",
+            "session",
+            "command"
+        ])
 
-    # Cowrie command events
-    commands = df[df["eventid"] == "cowrie.command.input"].copy()
+        for event in events:
+            if event.get("eventid") != "cowrie.command.input":
+                continue
 
-    if commands.empty:
+            command = event.get("input", "") or ""
 
-        commands.to_csv(
-            output_dir / "file_transfers.csv",
-            index=False
-        )
+            if not any(keyword.lower() in command.lower()
+                       for keyword in keywords):
+                continue
 
-        return 0
+            writer.writerow([
+                event.get("timestamp", ""),
+                event.get("src_ip", ""),
+                event.get("session", ""),
+                command
+            ])
+            count += 1
 
-    keywords = [
-        "scp",
-        "wget",
-        "curl",
-        "ftp",
-        "tftp",
-        "sftp"
-    ]
-
-    transfers = commands[
-        commands["input"].fillna("").str.contains(
-            "|".join(keywords),
-            case=False,
-            regex=True
-        )
-    ].copy()
-
-    columns = [
-        "timestamp",
-        "src_ip",
-        "session",
-        "input"
-    ]
-
-    transfers = transfers.reindex(columns=columns)
-
-    transfers.rename(
-        columns={"input": "command"},
-        inplace=True
-    )
-
-    transfers.to_csv(
-        output_dir / "file_transfers.csv",
-        index=False
-    )
-
-    return len(transfers)
+    return count

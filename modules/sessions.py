@@ -1,65 +1,53 @@
-"""
-Session Analysis Module
-
-Research:
-Dynamic Network Defense Rule Generation Using
-Cowrie Honeypot Data with Automated Cisco ACL Enforcement
-"""
-
-import pandas as pd
-
+import csv
 
 def extract_sessions(events, output_dir):
+    output_file = output_dir / "session_summary.csv"
 
-    df = pd.DataFrame(events)
+    sessions = {}
 
-    if df.empty:
-        print("No events found.")
-        return 0
+    for event in events:
+        eventid = event.get("eventid", "")
+        session = event.get("session")
 
-    # Session started
-    connects = df[df["eventid"] == "cowrie.session.connect"].copy()
+        if not session:
+            continue
 
-    # Session closed
-    closes = df[df["eventid"] == "cowrie.session.closed"].copy()
+        if session not in sessions:
+            sessions[session] = {
+                "src_ip": "",
+                "start_time": "",
+                "end_time": "",
+                "commands": 0
+            }
 
-    # Commands
-    commands = df[df["eventid"] == "cowrie.command.input"].copy()
+        if eventid == "cowrie.session.connect":
+            sessions[session]["src_ip"] = event.get("src_ip", "")
+            sessions[session]["start_time"] = event.get("timestamp", "")
 
-    summary = []
+        elif eventid == "cowrie.session.closed":
+            sessions[session]["end_time"] = event.get("timestamp", "")
 
-    for session in connects["session"].unique():
+        elif eventid == "cowrie.command.input":
+            sessions[session]["commands"] += 1
 
-        connect = connects[connects["session"] == session]
+    with open(output_file, "w", newline="", encoding="utf-8") as csvfile:
+        writer = csv.writer(csvfile)
 
-        close = closes[closes["session"] == session]
+        writer.writerow([
+            "session",
+            "src_ip",
+            "start_time",
+            "end_time",
+            "commands"
+        ])
 
-        cmd = commands[commands["session"] == session]
+        for session, data in sessions.items():
+            writer.writerow([
+                session,
+                data["src_ip"],
+                data["start_time"],
+                data["end_time"],
+                data["commands"]
+            ])
 
-        start = connect.iloc[0]["timestamp"]
-
-        end = ""
-
-        if not close.empty:
-            end = close.iloc[-1]["timestamp"]
-
-        src_ip = connect.iloc[0]["src_ip"]
-
-        summary.append({
-
-            "session": session,
-            "src_ip": src_ip,
-            "start_time": start,
-            "end_time": end,
-            "commands": len(cmd)
-
-        })
-
-    result = pd.DataFrame(summary)
-
-    result.to_csv(
-        output_dir / "session_summary.csv",
-        index=False
-    )
-
-    return len(result)
+    return len(sessions)

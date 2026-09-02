@@ -8,6 +8,8 @@
 # Cowrie Honeypot Data with Automated Cisco ACL Enforcement
 ##################################################
 
+set -e
+
 echo "========================================="
 echo " AWS Honeypot Auto Update Started"
 echo "========================================="
@@ -15,7 +17,7 @@ echo "========================================="
 PROJECT="/home/cowrie/research/AWS_Honeypot"
 COWRIE="/home/cowrie/cowrie"
 
-cd "$PROJECT" || exit 1
+cd "$PROJECT"
 
 # -----------------------------------------
 # Activate Python Virtual Environment
@@ -48,19 +50,15 @@ python scripts/parse_logs.py
 # Git Update
 # -----------------------------------------
 
-git add .
+git add .gitignore
+git add data/processed/
 
 if ! git diff --cached --quiet
 then
-
     git commit -m "Hourly threat intelligence update"
-
     git push
-
 else
-
-    echo "No changes detected."
-
+    echo "No processed data changes detected."
 fi
 
 echo "========================================="

@@ -1,43 +1,28 @@
-"""
-Failed Login Parser
-
-Research:
-Dynamic Network Defense Rule Generation Using
-Cowrie Honeypot Data with Automated Cisco ACL Enforcement
-"""
-
-import pandas as pd
-
+import csv
 
 def extract_failed(events, output_dir):
+    output_file = output_dir / "failed_logins.csv"
+    count = 0
 
-    df = pd.DataFrame(events)
+    with open(output_file, "w", newline="", encoding="utf-8") as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow([
+            "timestamp",
+            "src_ip",
+            "username",
+            "password"
+        ])
 
-    if df.empty:
-        print("No events found.")
-        return 0
+        for event in events:
+            if event.get("eventid") != "cowrie.login.failed":
+                continue
 
-    failed = df[df["eventid"] == "cowrie.login.failed"].copy()
+            writer.writerow([
+                event.get("timestamp", ""),
+                event.get("src_ip", ""),
+                event.get("username", ""),
+                event.get("password", "")
+            ])
+            count += 1
 
-    if failed.empty:
-        failed.to_csv(
-            output_dir / "failed_logins.csv",
-            index=False
-        )
-        return 0
-
-    columns = [
-        "timestamp",
-        "src_ip",
-        "username",
-        "password"
-    ]
-
-    failed = failed.reindex(columns=columns)
-
-    failed.to_csv(
-        output_dir / "failed_logins.csv",
-        index=False
-    )
-
-    return len(failed)
+    return count
