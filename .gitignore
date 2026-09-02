@@ -17,3 +17,8 @@ __pycache__/
 
 # Backup Logs (optional)
 backups/daily/
+
+# Live and large raw Cowrie datasets
+data/raw/cowrie_live.json
+data/raw/master_dataset.json
+data/raw/*.backup
