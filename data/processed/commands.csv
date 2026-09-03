@@ -28253,3 +28253,12 @@ echo ""FILTER:$filter_output"""
 2026-08-16T10:43:34.896070Z,221.7.248.141,c21ef5f1b574,uname -a
 2026-08-16T10:43:35.729956Z,221.7.248.141,3777c8709f66,uname -a
 2026-08-16T11:14:07.251158Z,167.71.39.126,300d0b052de5,"uname -a && echo '---SEP---' && nproc && echo '---SEP---' && nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null; true"
+2026-09-03T00:57:00.014753Z,118.70.239.231,6af012f152d0,/ip cloud print
+2026-09-03T00:57:00.743339Z,118.70.239.231,6af012f152d0,ifconfig
+2026-09-03T00:57:01.470477Z,118.70.239.231,6af012f152d0,uname -a
+2026-09-03T00:57:02.213546Z,118.70.239.231,6af012f152d0,cat /proc/cpuinfo
+2026-09-03T00:57:03.023514Z,118.70.239.231,6af012f152d0,ps | grep '[Mm]iner'
+2026-09-03T00:57:03.770332Z,118.70.239.231,6af012f152d0,ps -ef | grep '[Mm]iner'
+2026-09-03T00:57:04.511648Z,118.70.239.231,6af012f152d0,ls -la ~/.local/share/TelegramDesktop/tdata /home/*/.local/share/TelegramDesktop/tdata /dev/ttyGSM* /dev/ttyUSB-mod* /var/spool/sms/* /var/log/smsd.log /etc/smsd.conf* /usr/bin/qmuxd /var/qmux_connect_socket /etc/config/simman /dev/modem* /var/config/sms/*
+2026-09-03T00:57:05.250760Z,118.70.239.231,6af012f152d0,locate D877F783D5D3EF8Cs
+2026-09-03T00:57:06.002035Z,118.70.239.231,6af012f152d0,echo Hi | cat -n
