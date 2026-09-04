@@ -28185,3 +28185,7 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-09-03T18:07:51.728627Z,134.209.37.134,8a66496acf20,"\x16\x03\x01\x05\xe2\x01\x00\x05\xde\x03\x03\x93c\xf4\x165\xe1\x11]\xfd\xbcF\x17\xb85\xb6\x80\x10\x12oEt\xe1D\xcc\xf67\xac\x92\xd2T\xd4; 9\xb7+\x0bleS}`\xdd\xc9\xae\xc9,\x7fs\xda!\xef\x0d\x95\x0ftx\xe1\x0fN\xf8\x166\x1a\x83\x002\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x09\xc0\x13\xc0",,,
 2026-09-03T20:45:39.864334Z,139.19.117.129,2f05c9b37615,SSH-2.0-Go,f1e5e9d24e5e345e8745613bde22d532,,
 2026-09-03T22:43:20.889197Z,139.19.117.129,783b1a7a188e,SSH-2.0-Go,f1e5e9d24e5e345e8745613bde22d532,,
+2026-09-03T23:04:28.759836Z,198.235.24.112,b0933ea9bfae,SSH-2.0-ZGrab ZGrab SSH Survey,dd9bcf093c355da7000132131cb36fd0,,
+2026-09-03T23:19:55.786690Z,80.94.92.234,9ba1ffc15c79,SSH-2.0-Go,2ec37a7cc8daf20b10e1ad6221061ca5,,
+2026-09-03T23:22:32.245602Z,80.94.92.234,58434e0233a9,SSH-2.0-Go,2ec37a7cc8daf20b10e1ad6221061ca5,,
+2026-09-03T23:40:38.213839Z,18.218.118.203,6b25f0bbe31e,SSH-2.0-Go,e54ef3ec27fe1fea7ab64d3fa05359fd,,
