@@ -28194,3 +28194,6 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-09-04T03:41:14.117040Z,139.19.117.129,01dce2cf3b20,SSH-2.0-Go,f1e5e9d24e5e345e8745613bde22d532,,
 2026-09-04T05:17:28.925982Z,165.154.41.56,a5e2341ad3e3,SSH-2.0-OpenSSH_7.4,ec9ea89c70f5fc71cf61061bff5e4740,,
 2026-09-04T05:17:30.607125Z,165.154.41.56,7a4c934c9044,SSH-2.0-OpenSSH_7.4,e788c657d1a22971d5026526ffd2e918,,
+2026-09-04T11:03:48.448730Z,91.196.152.216,ad1e45893c6a,"\x16\x03\x03\x02b\x01\x00\x02^\x03\x03t\xd5\xf3\xb2!\x81X\xe3\xc5q\x07\x93K\xbcA\xb8\x14\x82\xd3\xcb\xc8\xf1\xa2\xff\x8b\xda\xc3\x0cB\xee{\x88 \xa4\x1f,#;\x1a\xee\xbe\x86/\x8bz\xe0\xf1\xda\xee\x0b\x91\x09\x03C\xc0\x0b\x98\xdf\x06\xfa/J]\x03\xb1\x00\x8a\x00\x16\x003\x00g\xc0\x9e\xc0\xa2\x00\x9e\x009\x00k\xc0\x9f\xc0\xa3\x00\x9f\x00E\x00\xbe\x00\x88\x00\xc4\x00\x9a\xc0\x08\xc0\x09\xc0#\xc0\xac\xc0\xae\xc0+\xc0",,,
+2026-09-04T11:06:16.118276Z,91.231.89.177,8dfa258e92bb,SSH-2.0-perlssh,3c0eaacec19ba322a90a5541dac09a06,,
+2026-09-04T11:06:24.300025Z,91.231.89.101,7ca2e7efb5f5,SSH-2.0-perlssh,3c0eaacec19ba322a90a5541dac09a06,,
