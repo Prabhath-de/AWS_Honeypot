@@ -977,3 +977,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-04T01:42:22.010537Z,31.41.71.32,Ukraine,UA,50648,PE UAinet
 2026-09-04T02:20:39.562488Z,34.77.36.73,Belgium,BE,396982,Google LLC
 2026-09-04T02:47:42.195211Z,217.81.16.247,Germany,DE,3320,Deutsche Telekom AG
+2026-09-04T03:15:35.045820Z,195.96.143.118,Ukraine,UA,211621,West-TV LLC
+2026-09-04T03:21:40.798875Z,73.122.155.60,United States,US,7922,"Comcast Cable Communications, LLC"
+2026-09-04T03:45:25.516593Z,190.178.31.219,Argentina,AR,22927,Telefonica de Argentina
