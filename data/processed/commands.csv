@@ -28306,3 +28306,12 @@ echo ""FILTER:$filter_output"""
 2026-09-04T13:58:56.926301Z,75.156.145.235,1d9e6a2f79b8,ls -la ~/.local/share/TelegramDesktop/tdata /home/*/.local/share/TelegramDesktop/tdata /dev/ttyGSM* /dev/ttyUSB-mod* /var/spool/sms/* /var/log/smsd.log /etc/smsd.conf* /usr/bin/qmuxd /var/qmux_connect_socket /etc/config/simman /dev/modem* /var/config/sms/*
 2026-09-04T13:58:57.571213Z,75.156.145.235,1d9e6a2f79b8,locate D877F783D5D3EF8Cs
 2026-09-04T13:58:58.229180Z,75.156.145.235,1d9e6a2f79b8,echo Hi | cat -n
+2026-09-04T18:23:25.515616Z,193.163.187.123,b42b504ebee6,/ip cloud print
+2026-09-04T18:23:25.740129Z,193.163.187.123,b42b504ebee6,ifconfig
+2026-09-04T18:23:25.960777Z,193.163.187.123,b42b504ebee6,uname -a
+2026-09-04T18:23:26.182600Z,193.163.187.123,b42b504ebee6,cat /proc/cpuinfo
+2026-09-04T18:23:26.406681Z,193.163.187.123,b42b504ebee6,ps | grep '[Mm]iner'
+2026-09-04T18:23:26.629520Z,193.163.187.123,b42b504ebee6,ps -ef | grep '[Mm]iner'
+2026-09-04T18:23:26.862085Z,193.163.187.123,b42b504ebee6,ls -la ~/.local/share/TelegramDesktop/tdata /home/*/.local/share/TelegramDesktop/tdata /dev/ttyGSM* /dev/ttyUSB-mod* /var/spool/sms/* /var/log/smsd.log /etc/smsd.conf* /usr/bin/qmuxd /var/qmux_connect_socket /etc/config/simman /dev/modem* /var/config/sms/*
+2026-09-04T18:23:27.098295Z,193.163.187.123,b42b504ebee6,locate D877F783D5D3EF8Cs
+2026-09-04T18:23:27.345820Z,193.163.187.123,b42b504ebee6,echo Hi | cat -n
