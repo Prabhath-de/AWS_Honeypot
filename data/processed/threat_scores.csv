@@ -45,3 +45,4 @@ src_ip,threat_score,risk_level,total_events,failed_login,successful_login,comman
 91.92.40.31,30,Medium,2,0,1,0,0,0,0,0,1,0
 34.77.36.73,30,Medium,3,0,1,0,0,0,0,0,2,0
 77.239.124.214,30,Medium,2,0,1,0,0,0,0,0,1,0
+77.239.124.211,30,Medium,2,0,1,0,0,0,0,0,1,0

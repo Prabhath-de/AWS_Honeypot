@@ -1074,3 +1074,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-05T12:05:56.626757Z,50.219.247.194,United States,US,7922,"Comcast Cable Communications, LLC"
 2026-09-05T12:16:58.766013Z,27.130.213.82,Thailand,TH,133481,AIS Fibre
 2026-09-05T13:53:03.686469Z,173.3.9.18,United States,US,6128,Cablevision Systems Corp.
+2026-09-05T14:02:49.496774Z,77.239.124.211,The Netherlands,NL,198364,Banatsync Srl
+2026-09-05T14:19:17.288755Z,102.39.146.91,South Africa,ZA,11845,Vox Telecom Ltd
+2026-09-05T14:47:09.962281Z,152.169.8.106,Argentina,AR,7303,Telecom Argentina S.A.
