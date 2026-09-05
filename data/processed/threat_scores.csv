@@ -1,6 +1,6 @@
 src_ip,threat_score,risk_level,total_events,failed_login,successful_login,commands,file_upload,file_transfer,malware,campaign,client_fingerprint,direct_tcpip
 170.205.28.204,1535730,Critical,111693,1,27922,27922,0,0,0,27922,27926,0
-49.248.197.50,5225,Critical,380,0,95,95,0,0,0,95,95,0
+49.248.197.50,6435,Critical,468,0,117,117,0,0,0,117,117,0
 139.19.117.129,440,Critical,33,22,0,0,0,0,0,0,11,0
 193.32.162.27,330,Critical,24,0,6,6,0,0,0,6,6,0
 125.227.156.55,280,Critical,20,0,4,6,2,0,0,4,4,0
