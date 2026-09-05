@@ -1,6 +1,6 @@
 src_ip,threat_score,risk_level,total_events,failed_login,successful_login,commands,file_upload,file_transfer,malware,campaign,client_fingerprint,direct_tcpip
 170.205.28.204,1535730,Critical,111693,1,27922,27922,0,0,0,27922,27926,0
-49.248.197.50,10120,Critical,736,0,184,184,0,0,0,184,184,0
+49.248.197.50,11440,Critical,832,0,208,208,0,0,0,208,208,0
 139.19.117.129,440,Critical,33,22,0,0,0,0,0,0,11,0
 193.32.162.27,330,Critical,24,0,6,6,0,0,0,6,6,0
 125.227.156.55,280,Critical,20,0,4,6,2,0,0,4,4,0
@@ -44,3 +44,4 @@ src_ip,threat_score,risk_level,total_events,failed_login,successful_login,comman
 151.238.136.120,30,Medium,2,0,1,0,0,0,0,0,1,0
 91.92.40.31,30,Medium,2,0,1,0,0,0,0,0,1,0
 34.77.36.73,30,Medium,3,0,1,0,0,0,0,0,2,0
+77.239.124.214,30,Medium,2,0,1,0,0,0,0,0,1,0

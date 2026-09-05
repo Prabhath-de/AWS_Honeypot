@@ -1062,3 +1062,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-05T07:27:51.965694Z,190.173.0.133,Argentina,AR,22927,Telefonica de Argentina
 2026-09-05T07:42:42.747908Z,181.45.132.77,Argentina,AR,27747,Telecentro S.A.
 2026-09-05T07:56:17.625824Z,66.132.195.110,United States,US,398324,"Censys, Inc."
+2026-09-05T08:04:53.746455Z,77.239.124.214,The Netherlands,NL,198364,Banatsync Srl
+2026-09-05T08:25:58.982943Z,38.236.209.227,Argentina,AR,52307,CORPICO LTDA
+2026-09-05T08:46:22.419042Z,121.121.56.127,Malaysia,MY,9534,Binariang Berhad
