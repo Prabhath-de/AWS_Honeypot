@@ -1041,3 +1041,7 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-04T22:40:41.230517Z,190.224.172.216,Argentina,AR,7303,Telecom Argentina S.A.
 2026-09-04T22:51:21.930316Z,181.46.164.167,Argentina,AR,27747,Telecentro S.A.
 2026-09-04T23:55:43.524193Z,109.170.122.240,Russia,RU,12714,PJSC MegaFon
+2026-09-05T00:06:18.863641Z,89.233.107.97,The Netherlands,NL,29802,"HIVELOCITY, Inc."
+2026-09-05T00:20:27.183718Z,146.255.74.142,North Macedonia,MK,43612,Company for communications services A1 Makedonija DOOEL Skopje
+2026-09-05T00:54:29.320393Z,92.142.83.175,French Guiana,GF,3215,Orange
+2026-09-05T00:56:16.180671Z,82.121.133.147,France,FR,3215,Orange
