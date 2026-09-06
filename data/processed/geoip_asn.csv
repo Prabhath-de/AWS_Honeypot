@@ -1130,3 +1130,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-06T08:34:17.134484Z,66.132.186.174,United States,US,398324,"Censys, Inc."
 2026-09-06T08:36:32.358811Z,178.128.66.109,United States,US,14061,"DigitalOcean, LLC"
 2026-09-06T08:50:28.153190Z,78.167.110.124,Türkiye,TR,9121,Turk Telekom
+2026-09-06T09:18:28.623760Z,181.44.117.33,Argentina,AR,27747,Telecentro S.A.
+2026-09-06T09:19:06.439509Z,186.12.169.175,Argentina,AR,11664,Techtel LMDS Comunicaciones Interactivas S.A.
