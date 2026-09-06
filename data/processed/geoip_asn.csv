@@ -1132,3 +1132,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-06T08:50:28.153190Z,78.167.110.124,Türkiye,TR,9121,Turk Telekom
 2026-09-06T09:18:28.623760Z,181.44.117.33,Argentina,AR,27747,Telecentro S.A.
 2026-09-06T09:19:06.439509Z,186.12.169.175,Argentina,AR,11664,Techtel LMDS Comunicaciones Interactivas S.A.
+2026-09-06T10:31:58.949041Z,105.209.137.217,South Africa,ZA,16637,MTN SA
+2026-09-06T10:37:18.410724Z,195.5.84.180,Spain,ES,8903,Lyntia Networks S.A.
