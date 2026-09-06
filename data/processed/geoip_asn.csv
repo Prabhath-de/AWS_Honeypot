@@ -1141,3 +1141,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-06T13:21:13.562443Z,93.142.188.44,Croatia,HR,5391,Hrvatski Telekom d.d.
 2026-09-06T13:27:07.223470Z,201.205.241.198,Costa Rica,CR,11830,Instituto Costarricense de Electricidad y Telecom.
 2026-09-06T13:50:16.431616Z,41.193.133.195,South Africa,ZA,11845,Vox Telecom Ltd
+2026-09-06T15:28:50.438606Z,186.23.111.199,Argentina,AR,27747,Telecentro S.A.
+2026-09-06T15:30:17.805992Z,103.130.197.156,Bangladesh,BD,138043,T Network
+2026-09-06T15:46:16.124419Z,62.224.220.122,Germany,DE,3320,Deutsche Telekom AG

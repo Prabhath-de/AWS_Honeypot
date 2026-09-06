@@ -324,3 +324,5 @@ echo ""CPU_MODEL:$cpu_model""
 echo ""GPU:$gpu_info""
 echo ""LAST:$last_output""
 echo ""FILTER:$filter_output"""
+2026-09-06T15:46:20.206288Z,62.224.220.122,5771df728499,scp -t /tmp/pB4MGeXZ
+2026-09-06T15:46:20.431785Z,62.224.220.122,9e8548cea664,scp -t /tmp/pB4MGeXZ
