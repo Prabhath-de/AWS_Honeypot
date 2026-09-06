@@ -1109,3 +1109,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-05T22:26:49.793102Z,20.102.44.20,United States,US,8075,Microsoft Corporation
 2026-09-05T22:46:23.046908Z,8.137.90.131,China,CN,37963,"Hangzhou Alibaba Advertising Co.,Ltd."
 2026-09-05T23:50:21.369648Z,116.110.0.113,Vietnam,VN,24086,Viettel Corporation
+2026-09-06T00:11:20.461122Z,186.105.68.9,Chile,CL,7418,TELEFONICA CHILE S.A.
+2026-09-06T00:53:38.640039Z,153.67.183.189,Argentina,AR,14593,Space Exploration Technologies Corporation
