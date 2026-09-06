@@ -1155,3 +1155,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-06T18:19:27.389875Z,138.94.109.25,Brazil,BR,262293,Sistema Oeste de Servicos LTDA
 2026-09-06T18:39:06.764828Z,198.235.24.8,United States,US,396982,Google LLC
 2026-09-06T18:54:30.824917Z,188.253.222.114,Azerbaijan,AZ,28787,Aztelekom LLC
+2026-09-06T19:53:35.688013Z,157.245.42.45,United Kingdom,GB,14061,"DigitalOcean, LLC"
+2026-09-06T19:57:02.429634Z,167.172.115.128,United States,US,14061,"DigitalOcean, LLC"
