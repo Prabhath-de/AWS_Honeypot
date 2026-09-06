@@ -28464,3 +28464,4 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-09-05T23:52:58.577035Z,116.110.0.113,72045787891e,SSH-2.0-AsyncSSH_2.1.0,fda360b1b4f4d3455cb75c6e7edb1d11,,
 2026-09-05T23:53:18.522274Z,116.110.0.113,9afd258b5680,SSH-2.0-AsyncSSH_2.1.0,fda360b1b4f4d3455cb75c6e7edb1d11,,
 2026-09-06T00:03:56.867276Z,3.130.168.2,e2706d29abcf,SSH-2.0-Go,e54ef3ec27fe1fea7ab64d3fa05359fd,,
+2026-09-06T01:46:39.029832Z,64.62.156.66,54177a7dfd61,\x16\x03\x01\x00{\x01\x00\x00w\x03\x035\xcf\xfd'r\xc7\x97,,,
