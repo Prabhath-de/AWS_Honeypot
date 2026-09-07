@@ -28567,3 +28567,12 @@ echo ""FILTER:$filter_output"""
 2026-09-06T21:11:25.160212Z,167.172.115.128,df4de81b90ff,/bin/./uname -s -v -n -r -m
 2026-09-06T21:13:40.887136Z,167.172.115.128,460b39cf5208,/bin/./uname -s -v -n -r -m
 2026-09-06T21:15:56.846016Z,167.172.115.128,977591728275,/bin/./uname -s -v -n -r -m
+2026-09-07T11:42:55.711540Z,176.193.12.150,b5b0218912c1,/ip cloud print
+2026-09-07T11:42:55.858301Z,176.193.12.150,b5b0218912c1,ifconfig
+2026-09-07T11:42:56.011223Z,176.193.12.150,b5b0218912c1,uname -a
+2026-09-07T11:42:56.209675Z,176.193.12.150,b5b0218912c1,cat /proc/cpuinfo
+2026-09-07T11:42:56.620972Z,176.193.12.150,b5b0218912c1,ps | grep '[Mm]iner'
+2026-09-07T11:42:56.771150Z,176.193.12.150,b5b0218912c1,ps -ef | grep '[Mm]iner'
+2026-09-07T11:42:56.965790Z,176.193.12.150,b5b0218912c1,ls -la ~/.local/share/TelegramDesktop/tdata /home/*/.local/share/TelegramDesktop/tdata /dev/ttyGSM* /dev/ttyUSB-mod* /var/spool/sms/* /var/log/smsd.log /etc/smsd.conf* /usr/bin/qmuxd /var/qmux_connect_socket /etc/config/simman /dev/modem* /var/config/sms/*
+2026-09-07T11:42:57.124561Z,176.193.12.150,b5b0218912c1,locate D877F783D5D3EF8Cs
+2026-09-07T11:42:57.377001Z,176.193.12.150,b5b0218912c1,echo Hi | cat -n
