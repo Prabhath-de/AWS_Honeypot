@@ -28506,3 +28506,4 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-09-08T07:52:47.690516Z,195.184.76.48,1e2a9f6ab3a7,\x16\x03\x03\x02b\x01\x00\x02^\x03\x03\xdc\x027\xba}\x92o\xf2\xf9\xdb\x17\xd3\xe3\x00\xbb,,,
 2026-09-08T07:55:17.586732Z,91.230.168.32,63968a2e8ab8,SSH-2.0-perlssh,3c0eaacec19ba322a90a5541dac09a06,,
 2026-09-08T07:55:29.216521Z,195.184.76.110,f297196791de,SSH-2.0-perlssh,3c0eaacec19ba322a90a5541dac09a06,,
+2026-09-08T10:12:00.829087Z,198.235.24.73,5bcf5da7bfc3,SSH-2.0-ZGrab ZGrab SSH Survey,dd9bcf093c355da7000132131cb36fd0,,
