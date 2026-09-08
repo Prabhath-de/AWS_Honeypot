@@ -1249,3 +1249,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-08T11:30:58.742332Z,66.132.172.181,United States,US,398324,"Censys, Inc."
 2026-09-08T11:31:19.161308Z,66.132.172.189,United States,US,398324,"Censys, Inc."
 2026-09-08T11:32:32.451995Z,91.247.149.14,Russia,RU,57583,Vashnet
+2026-09-08T12:11:25.992120Z,196.89.160.202,Morocco,MA,36903,Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM
+2026-09-08T12:32:49.627609Z,81.88.146.253,Kazakhstan,KZ,39824,JSC Alma Telecommunications
