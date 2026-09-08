@@ -1245,3 +1245,7 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-08T10:01:21.887692Z,91.225.162.92,Ukraine,UA,56400,SPD Chernega Aleksandr Anatolevich
 2026-09-08T10:08:33.670550Z,201.207.239.70,Costa Rica,CR,11830,Instituto Costarricense de Electricidad y Telecom.
 2026-09-08T10:50:04.409937Z,190.229.92.109,Argentina,AR,7303,Telecom Argentina S.A.
+2026-09-08T11:24:23.825159Z,84.54.71.4,Uzbekistan,UZ,8193,Uzbektelekom Joint Stock Company
+2026-09-08T11:30:58.742332Z,66.132.172.181,United States,US,398324,"Censys, Inc."
+2026-09-08T11:31:19.161308Z,66.132.172.189,United States,US,398324,"Censys, Inc."
+2026-09-08T11:32:32.451995Z,91.247.149.14,Russia,RU,57583,Vashnet
