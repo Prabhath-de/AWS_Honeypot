@@ -28501,3 +28501,4 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-09-07T21:28:55.043313Z,192.42.116.15,f01f8d875a49,SSH-2.0-OpenSSH_10.5,d00d43d15d59705b090cf74488cc2218,,
 2026-09-07T22:06:41.685661Z,205.210.31.80,393091b639ce,SSH-2.0-ZGrab ZGrab SSH Survey,dd9bcf093c355da7000132131cb36fd0,,
 2026-09-07T22:55:14.971793Z,20.40.213.3,e9ebf8559854,MGLNDD_51.21.197.241_22,,,
+2026-09-08T01:56:49.868473Z,65.49.20.66,dc0b320c2eb2,\x16\x03\x01\x00{\x01\x00\x00w\x03\x03D\x95\xf8\xb1\x9b.R\xce\x14\x82w\x00@\x1doV\xcb\x8dpi\x1d\x8d8\xbe\xd7eA\x8f\x85K\xb5a\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0\x09\xc0\x14\xc0,,,
