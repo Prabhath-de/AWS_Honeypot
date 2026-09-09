@@ -1296,3 +1296,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-09T05:01:16.704975Z,70.234.89.15,United States,US,7018,"AT&T Enterprises, LLC"
 2026-09-09T05:44:45.286058Z,71.211.230.1,United States,US,209,"CenturyLink Communications, LLC"
 2026-09-09T05:49:50.975302Z,181.16.173.72,Argentina,AR,52323,Colsecor Cooperativa Limitada
+2026-09-09T06:38:11.243063Z,190.123.94.245,Argentina,AR,52444,Pogliotti & Pogliotti Construcciones S.A.
+2026-09-09T06:52:10.475134Z,35.150.244.46,United States,US,20115,Charter Communications LLC
+2026-09-09T06:55:05.095700Z,196.238.230.184,Tunisia,TN,37492,Orange Tunisie
