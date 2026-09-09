@@ -1306,3 +1306,4 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-09T11:02:10.961701Z,49.72.182.189,China,CN,140292,CHINATELECOM Jiangsu province Suzhou 5G network
 2026-09-09T11:12:21.479052Z,88.97.217.169,United Kingdom,GB,212655,YouFibre Limited
 2026-09-09T11:24:59.746266Z,105.101.182.254,Algeria,DZ,36947,Telecom Algeria
+2026-09-09T12:33:21.537642Z,66.132.195.42,United States,US,398324,"Censys, Inc."
