@@ -1301,3 +1301,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-09T06:55:05.095700Z,196.238.230.184,Tunisia,TN,37492,Orange Tunisie
 2026-09-09T08:38:38.189480Z,186.22.225.161,Argentina,AR,27747,Telecentro S.A.
 2026-09-09T09:05:42.085866Z,102.217.64.46,Kenya,KE,328987,Lime Emerging Solutions Limited
+2026-09-09T10:30:53.768676Z,138.204.150.12,Brazil,BR,263900,CHNET Telecom
+2026-09-09T10:34:45.345148Z,78.58.62.189,Lithuania,LT,8764,"Telia Lietuva, AB"
