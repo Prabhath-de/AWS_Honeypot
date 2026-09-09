@@ -1313,3 +1313,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-09T14:18:17.925643Z,2.13.121.199,France,FR,3215,Orange
 2026-09-09T14:37:43.632524Z,186.12.184.83,Paraguay,PY,11664,Techtel LMDS Comunicaciones Interactivas S.A.
 2026-09-09T14:56:32.765660Z,91.225.162.39,Ukraine,UA,56400,SPD Chernega Aleksandr Anatolevich
+2026-09-09T15:16:15.385324Z,190.120.253.169,Venezuela,VE,264628,"CORPORACION FIBEX TELECOM, C.A."
+2026-09-09T15:18:50.102892Z,181.21.63.44,Argentina,AR,22927,Telefonica de Argentina
+2026-09-09T15:51:36.825014Z,190.104.36.229,Argentina,AR,52363,Jumpnet Soluciones de Internet S.R.L.
