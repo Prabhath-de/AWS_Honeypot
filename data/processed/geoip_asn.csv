@@ -1373,3 +1373,5 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-10T12:01:55.728886Z,143.105.195.180,Canada,CA,14593,Space Exploration Technologies Corporation
 2026-09-10T12:14:22.416389Z,102.90.125.243,Nigeria,NG,29465,MTN NIGERIA Communication limited
 2026-09-10T12:58:19.582711Z,44.220.188.237,United States,US,14618,"Amazon.com, Inc."
+2026-09-10T13:22:03.368704Z,179.37.243.163,Argentina,AR,22927,Telefonica de Argentina
+2026-09-10T13:36:42.846502Z,66.132.172.39,United States,US,398324,"Censys, Inc."
