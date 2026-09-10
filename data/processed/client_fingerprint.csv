@@ -28615,3 +28615,4 @@ timestamp,src_ip,session,client_version,hassh,terminal_width,terminal_height
 2026-09-10T02:59:46.108495Z,109.160.32.15,c207fe522949,SSH-2.0-Go,0a07365cc01fa9fc82608ba4019af499,,
 2026-09-10T03:00:04.921545Z,109.160.32.15,d550120b4231,SSH-2.0-Go,0a07365cc01fa9fc82608ba4019af499,,
 2026-09-10T03:20:14.486396Z,77.239.124.179,3db130b5e20c,SSH-2.0-Go,16443846184eafde36765c9bab2f4397,,
+2026-09-10T04:45:50.779318Z,65.49.20.69,2cbe8bde56a6,\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x9eH\\\xe0\xd9\x95\xe7WI\xf9\xa0\x18r\xf8\xed&\x8f\xea1x)\xc6\xbb\x15WK\x99\x10r\x19N\x97\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0\x09\xc0\x14\xc0,,,
