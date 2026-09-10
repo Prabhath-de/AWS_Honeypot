@@ -1356,3 +1356,6 @@ timestamp,src_ip,country,country_code,asn,organization
 2026-09-10T04:45:50.779318Z,65.49.20.69,United States,US,6939,Hurricane Electric LLC
 2026-09-10T05:13:52.654767Z,186.22.186.57,Argentina,AR,27747,Telecentro S.A.
 2026-09-10T05:36:46.037213Z,120.25.227.85,China,CN,37963,"Hangzhou Alibaba Advertising Co.,Ltd."
+2026-09-10T06:11:00.816924Z,154.46.23.41,Dominican Republic,DO,267845,Exito Vision Cable S.A.S
+2026-09-10T06:11:07.014127Z,154.46.23.25,Dominican Republic,DO,267845,Exito Vision Cable S.A.S
+2026-09-10T06:43:32.013080Z,186.139.33.100,Argentina,AR,7303,Telecom Argentina S.A.
